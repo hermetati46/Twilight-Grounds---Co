@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Twilight Grounds & Co.</title>
+</head>
+<body>
+
+    <!-- Consistent header with site title and navigation. -->
+    <header>
+        <h1>Twilight Grounds & Co.</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="pre-order.html">Pre-Order Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area for the contact information and form. -->
+    <main>
+        <!-- Main heading for the contact page. -->
+        <h2>Get In Touch</h2>
+        <p>We'd love to hear from you. Visit us or send us a message below.</p>
+
+        <!-- This section contains the shop address and opening hours. -->
+        <section>
+            <h3>Our Location</h3>
+            <!-- The <address> tag is used for contact information. -->
+            <address>
+                123 Coffee Lane<br>
+                Neighborhood, 8001<br>
+                Cape Town
+            </address>
+            <!-- The <strong> tag gives text strong importance. -->
+            <p><strong>Phone:</strong> 021-123-4567</p>
+            
+            <h3>Opening Hours</h3>
+            <p>Monday - Friday: 7:00 AM - 6:00 PM</p>
+            <p>Saturday - Sunday: 8:00 AM - 4:00 PM</p>
+        </section>
+
+        <!-- This section contains the contact form. -->
+        <section>
+            <h3>Send Us a Message</h3>
+            <!-- The <form> element is used to create an interactive form for user input.'action' specifies where to send the form data; '#' is a placeholder and 'method' specifies the HTTP method to use, either 'post' or 'get'). -->
+            <form action="#" method="post">
+                <!-- Each form field is typically wrapped in a <div> for structure. -->
+                <div>
+                    <!-- The <label> tag defines a label for an <input> element, improving accessibility. -->
+                    <label for="name">Name:</label>
+                    <!-- The <input> tag specifies an input field where the user can enter data. 'type="text"' is for single-line text. -->
+                    <input type="text" id="name" name="user_name">
+                </div>
+                <div>
+                    <label for="email">Email:</label>
+                    <!-- 'type="email"' provides email validation in supported browsers. -->
+                    <input type="email" id="email" name="user_email">
+                </div>
+                <div>
+                    <label for="message">Message:</label>
+                    <!-- The <textarea> tag defines a multi-line text input control. -->
+                    <textarea id="message" name="user_message"></textarea>
+                </div>
+                <!-- The <button> tag with 'type="submit"' creates a button that submits the form data. -->
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+
+    <!-- Consistent footer. -->
+    <footer>
+        <p>&copy; 2025 Twilight Grounds & Co. | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
