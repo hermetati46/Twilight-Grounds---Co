@@ -102,4 +102,13 @@ This sitemap outlines the structure and hierarchy of the website's pages.
 - Online payment integration (future functionality)
 
 # Changelog
-2025-08-26: Initialized project. Created README.md file and project structure. Pushed initial commits to remote repository.
+- 2025-08-27: Initialized project. Created README.md file and project structure. Pushed initial commits to remote repository.
+
+# References
+- Sudra, Ashish. 2025. How to create a coffee shop website? Step-by-Step Guide. [online] Available at: https://deonde.co/blog/how-to-create-a-coffee-shop-website/ [Accessed 25 August 2025].
+
+- Morgan, R. 2024. Web Design Trends for Cafes and Restaurants. Smashing Magazine. [online] Available at: https://www.smashingmagazine.com/2024/02/web-design-trends-cafes-restaurants/ [Accessed 26 August 2025].
+
+- Hostinger, 2025. Hostinger Pricing. [online] Available at: https://www.hostinger.com/pricing?content=web-hosting [Accessed 26 August 2025].
+
+- Hostinger, 2025. Hostinger Domain Name. [online] Available at: https://www.hostinger.com/domain-name-results?domain=twilightgrounds.co.za [Accessed 26 August 2025].
