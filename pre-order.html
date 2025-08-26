@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pre-Order for Pickup - Twilight Grounds & Co.</title>
+</head>
+<body>
+
+    <!-- Consistent header with site title and navigation. -->
+    <header>
+        <h1>Twilight Grounds & Co.</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="pre-order.html">Pre-Order Now</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main content area for the pre-order form. -->
+    <main>
+        <h2>Pre-Order for Pickup</h2>
+        <p>Skip the queue! Place your order online and we'll have it ready for you.</p>
+
+        <!-- The <form> element to collect user order information. -->
+        <form action="#" method="post">
+            <!-- The <fieldset> tag is used to group related elements in a form. This improves structure and accessibility. -->
+            <fieldset>
+                <!-- The <legend> tag defines a caption for the <fieldset> element. -->
+                <legend>Your Details</legend>
+                <div>
+                    <label for="name">Name:</label>
+                    <!-- The 'required' attribute specifies that this input field must be filled out before submitting. -->
+                    <input type="text" id="name" name="user_name" required>
+                </div>
+                <div>
+                    <label for="phone">Phone Number:</label>
+                    <!-- 'type="tel"' is used for telephone number input. -->
+                    <input type="tel" id="phone" name="user_phone" required>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Your Order</legend>
+                <!-- Coffee selection dropdown -->
+                <div>
+                    <label for="coffee_item">Choose your coffee:</label>
+                    <!-- The <select> element creates a drop-down list. -->
+                    <select name="coffee_item" id="coffee_item">
+                        <!-- Each <option> tag defines an option in the drop-down list. -->
+                        <option value="espresso">Espresso</option>
+                        <option value="latte">Latte</option>
+                        <option value="cappuccino">Cappuccino</option>
+                    </select>
+                </div>
+                <!-- Pastry selection dropdown -->
+                <div>
+                    <label for="pastry_item">Choose your pastry:</label>
+                    <select name="pastry_item" id="pastry_item">
+                        <option value="none">None</option>
+                        <option value="croissant">Croissant</option>
+                        <option value="muffin">Muffin</option>
+                        <option value="scone">Scone</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Pickup Time</legend>
+                <div>
+                    <label for="pickup_time">Select a time:</label>
+                    <!-- 'type="time"' creates an input field for selecting a time. -->
+                    <!-- 'min' and 'max' attributes define the earliest and latest selectable times. -->
+                    <input type="time" id="pickup_time" name="pickup_time" min="07:00" max="18:00" required>
+                </div>
+            </fieldset>
+
+            <!-- A submit button to send the form data. -->
+            <button type="submit">Place Order</button>
+        </form>
+    </main>
+
+    <!-- Consistent footer. -->
+    <footer>
+        <p>&copy; 2025 Twilight Grounds & Co. | All Rights Reserved</p>
+    </footer>
+
+</body>
+</html>
