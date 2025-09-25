@@ -5,7 +5,7 @@ Student Number: ST10494935
 
 Course: Higher Certificate of Mobile Application and Web Development (HMAW)
 
-WEDE5020: Part 1
+WEDE5020: Part 1 and 2
 
 Github Repository: https://github.com/hermetati46/Twilight-Grounds---Co
 
@@ -125,6 +125,8 @@ To verify the responsiveness of the website here are some screenshots to see how
 
 # Changelog
 - 2025-08-27: Initialized project. Created README.md file and project structure. Pushed initial commits to remote repository.
+
+- 2025-09-26: Implemented an external CSS stylesheet (style.css) for all website styling, with a desktop-first layout using CSS Grid/Flexbox. Added custom visual styles (colors, backgrounds, typography, etc), interactive elements for links and buttons. Implemented responsive design with media queries and relative units for optimal viewing on many devices.
 
 # References
 - Sudra, Ashish. 2025. How to create a coffee shop website? Step-by-Step Guide. [online] Available at: https://deonde.co/blog/how-to-create-a-coffee-shop-website/ [Accessed 25 August 2025].
