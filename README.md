@@ -50,9 +50,12 @@ The project will be completed over a 7-week period.
 - Week 7 (Deployment): Deploy the website to a live server and submit the final project.
 
 # Part 1 Details
-This submission covers the initial planning and setup phase of the project, including the project proposal, content sourcing plan, and the creation of the initial project structure and GitHub repository.
+This submission coverd the initial planning and setup phase of the project, including the project proposal, content sourcing plan, and the creation of the initial project structure and GitHub repository.
 
-(Part 2 and Part 3 will follow in future submissions).
+# Part 2 Details
+This submission coverd the Styling of the website by implementing CSS styling, Grid/Flexbox layout, and Responsiveness using media queries, relative units, and optimized images.
+
+(Part 3 will follow in future submissions).
 
 # Sitemap
 This sitemap outlines the structure and hierarchy of the website's pages.
@@ -100,6 +103,25 @@ This sitemap outlines the structure and hierarchy of the website's pages.
 - Pickup time selector
 
 - Online payment integration (future functionality)
+
+# Screenshots
+To verify the responsiveness of the website here are some screenshots to see how the website is desplayed in different devices
+
+1. Deskops
+<img width="1910" height="3322" alt="desktop-layout" src="https://github.com/user-attachments/assets/dc8f6664-c39c-4471-ae1a-af3be2a3c1a8" />
+
+<br>
+<br>
+
+2. Tablets 
+<img width="553" height="2100" alt="tablet-layout" src="https://github.com/user-attachments/assets/53bb06b5-488b-4e26-a6f0-f76ade0d337e" />
+
+<br>
+<br>
+
+3. Mobile
+<img width="554" height="3332" alt="mobile-layout" src="https://github.com/user-attachments/assets/5107a1e9-0bb9-4f31-95a0-a2b3502b638f" />
+
 
 # Changelog
 - 2025-08-27: Initialized project. Created README.md file and project structure. Pushed initial commits to remote repository.
