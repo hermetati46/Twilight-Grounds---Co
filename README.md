@@ -112,3 +112,28 @@ This sitemap outlines the structure and hierarchy of the website's pages.
 - Hostinger, 2025. Hostinger Pricing. [online] Available at: https://www.hostinger.com/pricing?content=web-hosting [Accessed 26 August 2025].
 
 - Hostinger, 2025. Hostinger Domain Name. [online] Available at: https://www.hostinger.com/domain-name-results?domain=twilightgrounds.co.za [Accessed 26 August 2025].
+
+- Freepik, 2025. ediranerikles. [electronic print].
+Available at:
+<https://www.freepik.com/premium-photo/design-sem-nome-5_41268137.htm#from_element=cross_selling__photo> [Accessed 25 September 2025].
+
+- Freepik, 2025. Side view of young woman with curly hair holding coffee cup using laptop at bar. [electronic print].
+Available at:
+<https://www.freepik.com/free-photo/side-view-young-woman-with-curly-hair-holding-coffee-cup-using-laptop-bar-counter_3440268.htm#fromView=search&page=1&position=2&uuid=7b4807ca-ecee-45f3-bc0f-2d3df8a20a09&query=coffee+shop> [Accessed 25 September 2025].
+
+- Morning Roast, 2024. [electronic print].
+Available at:
+<https://www.mourningroast.com.au/> [Accessed 25 September 2025].
+
+- Freepik, 2025. knartz: Cup of coffee, bag and scoop on old rusty. [electronic print].
+Available at:
+<https://www.freepik.com/premium-photo/cup-coffee-bag-scoop-old-rusty_12905204.htm#fromView=search&page=2&position=10&uuid=c4c39d5e-f6aa-4a12-a790-5fed6bbe00c3&query=coffee> [Accessed 25 September 2025].
+
+- Freepik, 2025. 
+Top view of female barista holding cup of coffee. [electronic print].
+Available at:
+<https://www.freepik.com/free-photo/top-view-female-barista-holding-cup-coffee_12106822.htm#fromView=search&page=1&position=20&uuid=7b4807ca-ecee-45f3-bc0f-2d3df8a20a09&query=coffee+shop> [Accessed 25 September 2025].
+
+- Freepik, 2025. 8photo: Top view cappuccino cup and coffee beans in the form of a heart. [electronic print].
+Available at:
+<https://www.freepik.com/free-photo/top-view-cappuccino-cup-coffee-beans-form-heart_7728896.htm#fromView=search&page=1&position=9&uuid=775caecc-67d0-40cd-a86f-0497f15e71cf&query=coffee> [Accessed 25 September 2025].
