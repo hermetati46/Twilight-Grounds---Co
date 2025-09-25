@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Menu - Twilight Grounds & Co.</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Consistent header with site title and navigation across all pages. -->
     <header>
         <h1>Twilight Grounds & Co.</h1>
         <nav>
@@ -16,51 +16,126 @@
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="pre-order.html">Pre-Order Now</a></li>
+                <li><a href="pre-order.html" class="btn">Pre-Order Now</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- The main content area for the menu. -->
     <main>
-        <!-- Main heading for the menu page. -->
-        <h2>Our Menu</h2>
-
-        <!-- Each menu category is wrapped in a <section> tag for semantic grouping. This helps structure the content logically. -->
-        <section>
-            <!-- Subheading for the Coffee category. -->
-            <h3>Coffee</h3>
-            <!-- An unordered list <ul> is used to display the menu items in this category. -->
-            <ul>
-                <!-- Each <li> list item contains the name and a brief description of a menu item. -->
-                <li>Espresso - A rich and aromatic shot of coffee.</li>
-                <li>Latte - Espresso with steamed milk and a layer of foam.</li>
-                <li>Cappuccino - Equal parts espresso, steamed milk, and foam.</li>
-            </ul>
-        </section>
-
-        <!-- Section for the Tea category. -->
-        <section>
-            <h3>Tea</h3>
-            <ul>
-                <li>Rooibos Tea - A classic South African herbal tea.</li>
-                <li>Green Tea - A light and healthy option.</li>
-                <li>Chai Latte - Spiced tea with steamed milk.</li>
-            </ul>
-        </section>
-
-        <!-- Section for the Pastries category. -->
-        <section>
-            <h3>Pastries</h3>
-            <ul>
-                <li>Croissant - Buttery and flaky, baked fresh.</li>
-                <li>Muffin - A variety of daily flavours.</li>
-                <li>Scone - Served with jam and cream.</li>
-            </ul>
+        <section class="container">
+            <h2>Our Menu</h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto 3rem auto;">
+                Crafted with care, from classic espresso drinks to our signature seasonal specials and freshly baked pastries.
+            </p>
+            <div class="menu-grid">
+                <div class="menu-category">
+                    <h3>Coffee</h3>
+                    <ul>
+                        <li class="menu-item">
+                            <div class="menu-item-details">
+                                <strong>Espresso</strong>
+                                <p>A rich and aromatic shot of our signature house blend.</p>
+                            </div>
+                            <span class="menu-item-price">R25</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-item-details">
+                                <strong>Cappuccino</strong>
+                                <p>Espresso with steamed milk and a deep layer of foam.</p>
+                            </div>
+                            <span class="menu-item-price">R32</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-item-details">
+                                <strong>Latte</strong>
+                                <p>Rich espresso with steamed milk and a light layer of foam.</p>
+                            </div>
+                            <span class="menu-item-price">R35</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-category">
+                    <h3>Tea & Other</h3>
+                    <ul>
+                        <li class="menu-item">
+                            <div class="menu-item-details">
+                                <strong>Rooibos Tea</strong>
+                                <p>A classic South African herbal tea, naturally caffeine-free.</p>
+                            </div>
+                            <span class="menu-item-price">R22</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-item-details">
+                                <strong>Chai Latte</strong>
+                                <p>Sweetly spiced tea with steamed milk for a creamy treat.</p>
+                            </div>
+                            <span class="menu-item-price">R38</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-item-details">
+                                <strong>Hot Chocolate</strong>
+                                <p>Rich, decadent chocolate blended with steamed milk.</p>
+                            </div>
+                            <span class="menu-item-price">R35</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-category">
+                    <h3>Pastries & Bakes</h3>
+                    <ul>
+                        <li class="menu-item">
+                            <div class="menu-item-details">
+                                <strong>Butter Croissant</strong>
+                                <p>Flaky, buttery, and baked fresh every morning.</p>
+                            </div>
+                            <span class="menu-item-price">R28</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-item-details">
+                                <strong>Cinnamon Roll</strong>
+                                <p>Soft, gooey, and topped with a cream cheese frosting.</p>
+                            </div>
+                            <span class="menu-item-price">R38</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-item-details">
+                                <strong>Chocolate Chip Cookie</strong>
+                                <p>A classic, made with brown butter and dark chocolate chunks.</p>
+                            </div>
+                            <span class="menu-item-price">R22</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="menu-category">
+                    <h3>Sandwiches</h3>
+                    <ul>
+                        <li class="menu-item">
+                            <div class="menu-item-details">
+                                <strong>Chicken Mayo</strong>
+                                <p>Creamy chicken mayonnaise on your choice of bread.</p>
+                            </div>
+                            <span class="menu-item-price">R55</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-item-details">
+                                <strong>Caprese</strong>
+                                <p>Mozzarella, tomato, and basil pesto on ciabatta.</p>
+                            </div>
+                            <span class="menu-item-price">R60</span>
+                        </li>
+                        <li class="menu-item">
+                            <div class="menu-item-details">
+                                <strong>Toasted Cheese</strong>
+                                <p>A classic toasted cheese sandwich, simple and delicious..</p>
+                            </div>
+                            <span class="menu-item-price">R40</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </section>
     </main>
 
-    <!-- Consistent footer for the bottom of the page. -->
     <footer>
         <p>&copy; 2025 Twilight Grounds & Co. | All Rights Reserved</p>
     </footer>

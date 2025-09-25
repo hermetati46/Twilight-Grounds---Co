@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Twilight Grounds & Co.</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Consistent header with site title and navigation. -->
     <header>
         <h1>Twilight Grounds & Co.</h1>
         <nav>
@@ -16,63 +16,57 @@
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="pre-order.html">Pre-Order Now</a></li>
+                <li><a href="pre-order.html" class="btn">Pre-Order Now</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main content area for the contact information and form. -->
     <main>
-        <!-- Main heading for the contact page. -->
-        <h2>Get In Touch</h2>
-        <p>We'd love to hear from you. Visit us or send us a message below.</p>
-
-        <!-- This section contains the shop address and opening hours. -->
-        <section>
-            <h3>Our Location</h3>
-            <!-- The <address> tag is used for contact information. -->
-            <address>
-                123 Coffee Lane<br>
-                Neighborhood, 8001<br>
-                Cape Town
-            </address>
-            <!-- The <strong> tag gives text strong importance. -->
-            <p><strong>Phone:</strong> 021-123-4567</p>
-            
-            <h3>Opening Hours</h3>
-            <p>Monday - Friday: 7:00 AM - 6:00 PM</p>
-            <p>Saturday - Sunday: 8:00 AM - 4:00 PM</p>
-        </section>
-
-        <!-- This section contains the contact form. -->
-        <section>
-            <h3>Send Us a Message</h3>
-            <!-- The <form> element is used to create an interactive form for user input.'action' specifies where to send the form data; '#' is a placeholder and 'method' specifies the HTTP method to use, either 'post' or 'get'). -->
-            <form action="#" method="post">
-                <!-- Each form field is typically wrapped in a <div> for structure. -->
-                <div>
-                    <!-- The <label> tag defines a label for an <input> element, improving accessibility. -->
-                    <label for="name">Name:</label>
-                    <!-- The <input> tag specifies an input field where the user can enter data. 'type="text"' is for single-line text. -->
-                    <input type="text" id="name" name="user_name">
+        <section class="container">
+            <h2>Get In Touch</h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto 3rem auto;">
+                Have a question or just want to say hello? We’d love to hear from you.
+            </p>
+            <div class="form-grid">
+                <div class="info-container">
+                    <h3>Contact Details</h3>
+                    <ul>
+                        <li><strong>Address:</strong> 123 Coffee Lane, Neighborhood, 8001</li>
+                        <li><strong>Phone:</strong> (021) 123-4567</li>
+                        <li><strong>Email:</strong> hello@twilightgrounds.co.za</li>
+                    </ul>
+                    <h3 style="margin-top: 2rem;">Opening Hours</h3>
+                    <ul>
+                        <li><strong>Mon - Fri:</strong> 7:00 AM - 6:00 PM</li>
+                        <li><strong>Saturday:</strong> 8:00 AM - 4:00 PM</li>
+                        <li><strong>Sunday:</strong> Closed</li>
+                    </ul>
                 </div>
-                <div>
-                    <label for="email">Email:</label>
-                    <!-- 'type="email"' provides email validation in supported browsers. -->
-                    <input type="email" id="email" name="user_email">
+                <div class="form-container">
+                    <h3>Send Us a Message</h3>
+                    <form action="#" method="POST">
+                        <div class="form-group">
+                            <label for="name">Your Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Your Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Your Message</label>
+                            <textarea id="message" name="message" rows="6" required></textarea>
+                        </div>
+                        <button type="submit" class="btn">Submit</button>
+                    </form>
                 </div>
-                <div>
-                    <label for="message">Message:</label>
-                    <!-- The <textarea> tag defines a multi-line text input control. -->
-                    <textarea id="message" name="user_message"></textarea>
-                </div>
-                <!-- The <button> tag with 'type="submit"' creates a button that submits the form data. -->
-                <button type="submit">Submit</button>
-            </form>
+            </div>
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.370539174523!2d18.42321421521239!3d-33.93175408063883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d8a6a6e1b7b%3A0x2c5725205d4b5335!2sTruth%20Coffee%20Roasting!5e0!3m2!1sen!2sza!4v1663935246772!5m2!1sen!2sza" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
         </section>
     </main>
 
-    <!-- Consistent footer. -->
     <footer>
         <p>&copy; 2025 Twilight Grounds & Co. | All Rights Reserved</p>
     </footer>

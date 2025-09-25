@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pre-Order for Pickup - Twilight Grounds & Co.</title>
+    <title>Pre-Order Online - Twilight Grounds & Co.</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
-    <!-- Consistent header with site title and navigation. -->
     <header>
         <h1>Twilight Grounds & Co.</h1>
         <nav>
@@ -16,75 +16,95 @@
                 <li><a href="menu.html">Menu</a></li>
                 <li><a href="about.html">About Us</a></li>
                 <li><a href="contact.html">Contact</a></li>
-                <li><a href="pre-order.html">Pre-Order Now</a></li>
+                <li><a href="pre-order.html" class="btn">Pre-Order Now</a></li>
             </ul>
         </nav>
     </header>
 
-    <!-- Main content area for the pre-order form. -->
     <main>
-        <h2>Pre-Order for Pickup</h2>
-        <p>Skip the queue! Place your order online and we'll have it ready for you.</p>
+        <section class="container">
+            <h2>Pre-Order for Pickup</h2>
+            <p style="text-align: center; max-width: 600px; margin: 0 auto 3rem auto;">
+                Skip the queue! Place your order online and we'll have it ready for you to pick up.
+            </p>
+            <div class="order-grid">
+                <div class="order-form">
+                    <form action="#" method="POST">
+                        <fieldset>
+                            <div class="in-block">1. Your Details</div>
+                            <div class="form-group">
+                                <label for="name">Full Name</label>
+                                <input type="text" id="name" name="name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" required>
+                            </div>
+                        </fieldset>
 
-        <!-- The <form> element to collect user order information. -->
-        <form action="#" method="post">
-            <!-- The <fieldset> tag is used to group related elements in a form. This improves structure and accessibility. -->
-            <fieldset>
-                <!-- The <legend> tag defines a caption for the <fieldset> element. -->
-                <legend>Your Details</legend>
-                <div>
-                    <label for="name">Name:</label>
-                    <!-- The 'required' attribute specifies that this input field must be filled out before submitting. -->
-                    <input type="text" id="name" name="user_name" required>
-                </div>
-                <div>
-                    <label for="phone">Phone Number:</label>
-                    <!-- 'type="tel"' is used for telephone number input. -->
-                    <input type="tel" id="phone" name="user_phone" required>
-                </div>
-            </fieldset>
+                        <fieldset>
+                            <div class="in-block">2. Select Your Items</div>
+                            <div class="menu-selection-item">
+                                <input type="checkbox" id="espresso" name="item" value="Espresso">
+                                <label for="espresso">Espresso - R25</label>
+                            </div>
+                            <div class="menu-selection-item">
+                                <input type="checkbox" id="latte" name="item" value="Latte">
+                                <label for="latte">Latte - R35</label>
+                            </div>
+                            <div class="menu-selection-item">
+                                <input type="checkbox" id="cappuccino" name="item" value="Cappuccino">
+                                <label for="cappuccino">Cappuccino - R32</label>
+                            </div>
+                            <div class="menu-selection-item">
+                                <input type="checkbox" id="croissant" name="item" value="Croissant">
+                                <label for="croissant">Butter Croissant - R28</label>
+                            </div>
+                            <div class="menu-selection-item">
+                                <input type="checkbox" id="cinnamon" name="item" value="Cinnamon">
+                                <label for="cinnamon">Cinnamon Roll - R38</label>
+                            </div>
+                            <div class="menu-selection-item">
+                                <input type="checkbox" id="cookie" name="item" value="Cookie">
+                                <label for="cookie">Chocolate Chip Cookie - R22</label>
+                            </div>
+                            <div class="menu-selection-item">
+                                <input type="checkbox" id="chicken" name="item" value="Chicken">
+                                <label for="chicken">Chicken Mayo - R55</label>
+                            </div>
+                            <div class="menu-selection-item">
+                                <input type="checkbox" id="caprese" name="item" value="Caprese">
+                                <label for="caprese">Caprese - R60</label>
+                            </div>
+                            <div class="menu-selection-item">
+                                <input type="checkbox" id="cheese" name="item" value="Cheese">
+                                <label for="cheese">Toasted Cheese - R40</label>
+                            </div>
+                        </fieldset>
 
-            <fieldset>
-                <legend>Your Order</legend>
-                <!-- Coffee selection dropdown -->
-                <div>
-                    <label for="coffee_item">Choose your coffee:</label>
-                    <!-- The <select> element creates a drop-down list. -->
-                    <select name="coffee_item" id="coffee_item">
-                        <!-- Each <option> tag defines an option in the drop-down list. -->
-                        <option value="espresso">Espresso</option>
-                        <option value="latte">Latte</option>
-                        <option value="cappuccino">Cappuccino</option>
-                    </select>
+                        <fieldset>
+                            <div class="in-block">3. Pickup Time</div>
+                            <div class="form-group">
+                                <label for="pickup-time">Select a Time</label>
+                                <input type="time" id="pickup-time" name="pickup-time" min="07:30" max="17:30" required>
+                                <small>Please select a time between 7:30 AM and 5:30 PM.</small>
+                            </div>
+                        </fieldset>
+                        
+                        <button type="submit" class="btn">Place Your Order</button>
+                    </form>
                 </div>
-                <!-- Pastry selection dropdown -->
-                <div>
-                    <label for="pastry_item">Choose your pastry:</label>
-                    <select name="pastry_item" id="pastry_item">
-                        <option value="none">None</option>
-                        <option value="croissant">Croissant</option>
-                        <option value="muffin">Muffin</option>
-                        <option value="scone">Scone</option>
-                    </select>
-                </div>
-            </fieldset>
-
-            <fieldset>
-                <legend>Pickup Time</legend>
-                <div>
-                    <label for="pickup_time">Select a time:</label>
-                    <!-- 'type="time"' creates an input field for selecting a time. -->
-                    <!-- 'min' and 'max' attributes define the earliest and latest selectable times. -->
-                    <input type="time" id="pickup_time" name="pickup_time" min="07:00" max="18:00" required>
-                </div>
-            </fieldset>
-
-            <!-- A submit button to send the form data. -->
-            <button type="submit">Place Order</button>
-        </form>
+                
+                <aside class="order-summary">
+                    <h3>Your Order Summary</h3>
+                    <p>Your items will appear here once selected.</p>
+                    <hr>
+                    <h4>Total: R0.00</h4>
+                </aside>
+            </div>
+        </section>
     </main>
 
-    <!-- Consistent footer. -->
     <footer>
         <p>&copy; 2025 Twilight Grounds & Co. | All Rights Reserved</p>
     </footer>

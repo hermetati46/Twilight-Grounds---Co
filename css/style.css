@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Playfair+Display:wght@700&display=swap');
+
+/* --- CSS Variables (Root) --- */
+:root {
+    --primary-color: #4a2c2a;
+    --secondary-color: #f5f0e6;
+    --accent-color: #2e4636;
+    --text-color: #333;
+    --white-color: #ffffff;
+    --font-sans: 'Inter', sans-serif;
+    --font-serif: 'Playfair Display', serif;
+}
+
+/* --- Base Styles & CSS Reset --- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-sans);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--secondary-color);
+}
+
+/* --- Typography --- */
+h1, h2, h3 {
+    font-family: var(--font-serif);
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+a {
+    color: var(--accent-color);
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: var(--primary-color);
+}
+
+/* --- Layout Containers --- */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 3rem 1.5rem;
+}
+
+/* --- Header & Navigation  --- */
+header {
+    background: var(--secondary-color);
+    padding: 2rem 0;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+header nav ul {
+    list-style-type: none;
+    display: inline-flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+header nav a {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 0.5rem;
+}
+
+/* --- Buttons --- */
+.btn {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    font-weight: bold;
+    display: inline-block;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* --- Homepage Page --- */
+.hero {
+    text-align: center;
+    padding: 4rem 1.5rem;
+}
+
+.hero h2 {
+    font-size: 3rem;
+    color: var(--primary-color);
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto 2rem auto;
+}
+
+.hero-image {
+    max-width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    margin-top: 3rem;
+    margin-bottom: 1rem;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    text-align: center;
+}
+
+.feature-item {
+    background: var(--white-color);
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.feature-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.feature-item h3 {
+    font-size: 1.5rem;
+}
+
+/* --- About Page Page --- */
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.about-content img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* --- Footer  --- */
+footer {
+    text-align: center;
+    padding: 2.5rem 0;
+    margin-top: 2rem;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+}
+
+/* --- Menu Page --- */
+.menu-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.menu-category {
+    background-color: var(--white-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.menu-category h3 {
+    border-bottom: 2px solid var(--primary-color);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.menu-category ul { list-style-type: none; }
+.menu-item { display: flex; justify-content: space-between; margin-bottom: 1.5rem; }
+.menu-item-details { max-width: 80%; }
+.menu-item-details strong { font-size: 1.1rem; }
+.menu-item-details p { font-size: 0.9rem; margin: 0.25rem 0 0 0; color: #666; }
+.menu-item-price { font-weight: bold; font-size: 1.1rem; color: var(--primary-color); }
+
+/* --- Contact & Pre-Order Page --- */
+.form-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.form-container, .info-container {
+    background-color: var(--white-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.info-container ul { list-style-type: none; }
+.info-container li { margin-bottom: 1rem; font-size: 1.1rem; }
+.info-container strong { color: var(--primary-color); }
+.map-container { margin-top: 3rem; }
+.map-container iframe { width: 100%; height: 450px; border: none; border-radius: 8px; }
+
+.form-group { margin-bottom: 1.5rem; }
+.form-group label { display: block; font-weight: bold; margin-bottom: 0.5rem; color: var(--primary-color); }
+.form-group input, .form-group textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: var(--font-sans);
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+}
+.form-group input:focus, .form-group textarea:focus { outline: none; border-color: var(--accent-color); }
+
+/* --- Pre-Order Page  --- */
+.order-grid {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+
+fieldset {
+    border: none;
+    background: var(--white-color);
+    padding: 2rem;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+legend {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.in-block {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+}
+
+.menu-selection-item { display: flex; align-items: center; margin-bottom: 1rem; }
+.menu-selection-item input { width: auto; margin-right: 0.75rem; }
+.menu-selection-item label { font-size: 1.1rem; }
+.order-summary {
+    background-color: var(--white-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+    position: sticky;
+    top: 2rem;
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 992px) {
+    .features-grid, .about-content, .menu-grid, .form-grid, .order-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 600px) {
+    header nav ul { flex-direction: column; gap: 0.5rem; }
+    .hero h2 { font-size: 2.5rem; }
+}
