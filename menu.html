@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Our Menu - Twilight Grounds & Co.</title>
+    <meta name="description" content="Explore the full menu at Twilight Grounds & Co., featuring specialty coffee, tea, fresh pastries, and sandwiches, all made with care.">
+    <meta name="keywords" content="coffee menu, cafe menu, specialty coffee, pastries, sandwiches, tea">
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -27,111 +30,27 @@
             <p style="text-align: center; max-width: 600px; margin: 0 auto 3rem auto;">
                 Crafted with care, from classic espresso drinks to our signature seasonal specials and freshly baked pastries.
             </p>
-            <div class="menu-grid">
-                <div class="menu-category">
-                    <h3>Coffee</h3>
-                    <ul>
-                        <li class="menu-item">
-                            <div class="menu-item-details">
-                                <strong>Espresso</strong>
-                                <p>A rich and aromatic shot of our signature house blend.</p>
-                            </div>
-                            <span class="menu-item-price">R25</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-details">
-                                <strong>Cappuccino</strong>
-                                <p>Espresso with steamed milk and a deep layer of foam.</p>
-                            </div>
-                            <span class="menu-item-price">R32</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-details">
-                                <strong>Latte</strong>
-                                <p>Rich espresso with steamed milk and a light layer of foam.</p>
-                            </div>
-                            <span class="menu-item-price">R35</span>
-                        </li>
-                    </ul>
+
+            <!-- Dynamic Menu Controls -->
+            <div class="menu-controls">
+                <div class="form-group">
+                    <label for="search-bar">Search Menu</label>
+                    <input type="text" id="search-bar" placeholder="e.g., Latte, Croissant...">
                 </div>
-                <div class="menu-category">
-                    <h3>Tea & Other</h3>
-                    <ul>
-                        <li class="menu-item">
-                            <div class="menu-item-details">
-                                <strong>Rooibos Tea</strong>
-                                <p>A classic South African herbal tea, naturally caffeine-free.</p>
-                            </div>
-                            <span class="menu-item-price">R22</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-details">
-                                <strong>Chai Latte</strong>
-                                <p>Sweetly spiced tea with steamed milk for a creamy treat.</p>
-                            </div>
-                            <span class="menu-item-price">R38</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-details">
-                                <strong>Hot Chocolate</strong>
-                                <p>Rich, decadent chocolate blended with steamed milk.</p>
-                            </div>
-                            <span class="menu-item-price">R35</span>
-                        </li>
-                    </ul>
+                <div class="form-group">
+                    <label for="category-filter">Filter by Category</label>
+                    <select id="category-filter">
+                        <option value="all">All</option>
+                        <option value="Coffee">Coffee</option>
+                        <option value="Tea & Other">Tea & Other</option>
+                        <option value="Pastries & Bakes">Pastries & Bakes</option>
+                        <option value="Sandwiches">Sandwiches</option>
+                    </select>
                 </div>
-                <div class="menu-category">
-                    <h3>Pastries & Bakes</h3>
-                    <ul>
-                        <li class="menu-item">
-                            <div class="menu-item-details">
-                                <strong>Butter Croissant</strong>
-                                <p>Flaky, buttery, and baked fresh every morning.</p>
-                            </div>
-                            <span class="menu-item-price">R28</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-details">
-                                <strong>Cinnamon Roll</strong>
-                                <p>Soft, gooey, and topped with a cream cheese frosting.</p>
-                            </div>
-                            <span class="menu-item-price">R38</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-details">
-                                <strong>Chocolate Chip Cookie</strong>
-                                <p>A classic, made with brown butter and dark chocolate chunks.</p>
-                            </div>
-                            <span class="menu-item-price">R22</span>
-                        </li>
-                    </ul>
-                </div>
-                <div class="menu-category">
-                    <h3>Sandwiches</h3>
-                    <ul>
-                        <li class="menu-item">
-                            <div class="menu-item-details">
-                                <strong>Chicken Mayo</strong>
-                                <p>Creamy chicken mayonnaise on your choice of bread.</p>
-                            </div>
-                            <span class="menu-item-price">R55</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-details">
-                                <strong>Caprese</strong>
-                                <p>Mozzarella, tomato, and basil pesto on ciabatta.</p>
-                            </div>
-                            <span class="menu-item-price">R60</span>
-                        </li>
-                        <li class="menu-item">
-                            <div class="menu-item-details">
-                                <strong>Toasted Cheese</strong>
-                                <p>A classic toasted cheese sandwich, simple and delicious..</p>
-                            </div>
-                            <span class="menu-item-price">R40</span>
-                        </li>
-                    </ul>
-                </div>
+            </div>
+
+            <!-- Dynamic Menu Grid -->
+            <div class="menu-grid" id="menu-grid">
             </div>
         </section>
     </main>
@@ -140,5 +59,6 @@
         <p>&copy; 2025 Twilight Grounds & Co. | All Rights Reserved</p>
     </footer>
 
+    <script src="js/script.js" defer></script>
 </body>
 </html>
