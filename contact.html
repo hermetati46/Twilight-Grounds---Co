@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Us - Twilight Grounds & Co.</title>
+    <meta name="description" content="Get in touch with Twilight Grounds & Co. Find our address, phone number, opening hours, and send us a message via our contact form.">
+    <meta name="keywords" content="contact coffee shop, get in touch, coffee shop address, map, opening hours">
+
+    <!-- Leaflet.js CSS for Interactive Map -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin=""/>
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -27,6 +33,10 @@
             <p style="text-align: center; max-width: 600px; margin: 0 auto 3rem auto;">
                 Have a question or just want to say hello? We’d love to hear from you.
             </p>
+            
+            <!-- Form Success Message -->
+            <div id="contact-form-status" class="form-status" style="display: none;"></div>
+
             <div class="form-grid">
                 <div class="info-container">
                     <h3>Contact Details</h3>
@@ -44,25 +54,31 @@
                 </div>
                 <div class="form-container">
                     <h3>Send Us a Message</h3>
-                    <form action="#" method="POST">
+                    <!-- Updated Form with ID and error message placeholders -->
+                    <form id="contact-form" method="POST">
                         <div class="form-group">
-                            <label for="name">Your Name</label>
-                            <input type="text" id="name" name="name" required>
+                            <label for="contact-name">Your Name</label>
+                            <input type="text" id="contact-name" name="name" required>
+                            <div class="error-message" id="name-error"></div>
                         </div>
                         <div class="form-group">
-                            <label for="email">Your Email</label>
-                            <input type="email" id="email" name="email" required>
+                            <label for="contact-email">Your Email</label>
+                            <input type="email" id="contact-email" name="email" required>
+                            <div class="error-message" id="email-error"></div>
                         </div>
                         <div class="form-group">
-                            <label for="message">Your Message</label>
-                            <textarea id="message" name="message" rows="6" required></textarea>
+                            <label for="contact-message">Your Message</label>
+                            <textarea id="contact-message" name="message" rows="6" required></textarea>
+                            <div class="error-message" id="message-error"></div>
                         </div>
                         <button type="submit" class="btn">Submit</button>
                     </form>
                 </div>
             </div>
+            
+            <!-- Map Container -->
             <div class="map-container">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3310.370539174523!2d18.42321421521239!3d-33.93175408063883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1dcc5d8a6a6e1b7b%3A0x2c5725205d4b5335!2sTruth%20Coffee%20Roasting!5e0!3m2!1sen!2sza!4v1663935246772!5m2!1sen!2sza" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <div id="map"></div>
             </div>
         </section>
     </main>
@@ -71,5 +87,9 @@
         <p>&copy; 2025 Twilight Grounds & Co. | All Rights Reserved</p>
     </footer>
 
+    <!-- Leaflet.js Javascript for Interactive Map -->
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    
+    <script src="js/script.js" defer></script>
 </body>
 </html>
