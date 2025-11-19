@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pre-Order Online - Twilight Grounds & Co.</title>
+    <meta name="description" content="Skip the queue! Pre-order your favorite coffee, pastries, and sandwiches online for easy pickup at Twilight Grounds & Co.">
+    <meta name="keywords" content="pre-order coffee, online order, coffee pickup, skip the queue, cafe order">
+    
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -27,57 +30,67 @@
             <p style="text-align: center; max-width: 600px; margin: 0 auto 3rem auto;">
                 Skip the queue! Place your order online and we'll have it ready for you to pick up.
             </p>
+
+            <!-- Form Status Message -->
+            <div id="order-form-status" class="form-status" style="display: none;"></div>
+
             <div class="order-grid">
                 <div class="order-form">
-                    <form action="#" method="POST">
+                    <!-- Updated Form with ID and error placeholders -->
+                    <form id="pre-order-form" method="POST">
                         <fieldset>
                             <div class="in-block">1. Your Details</div>
                             <div class="form-group">
-                                <label for="name">Full Name</label>
-                                <input type="text" id="name" name="name" required>
+                                <label for="order-name">Full Name</label>
+                                <input type="text" id="order-name" name="name" required>
+                                <div class="error-message" id="order-name-error"></div>
                             </div>
                             <div class="form-group">
-                                <label for="phone">Phone Number</label>
-                                <input type="tel" id="phone" name="phone" required>
+                                <label for="order-phone">Phone Number (e.g., 0821234567)</label>
+                                <input type="tel" id="order-phone" name="phone" required pattern="[0-9]{10}" placeholder="0821234567">
+                                <div class="error-message" id="order-phone-error"></div>
                             </div>
                         </fieldset>
 
                         <fieldset>
                             <div class="in-block">2. Select Your Items</div>
+                            <div class="error-message" id="order-items-error" style="margin-bottom: 1rem;"></div>
+                            
+                            <!-- Items updated with data attributes for price -->
                             <div class="menu-selection-item">
-                                <input type="checkbox" id="espresso" name="item" value="Espresso">
+                                <input type="checkbox" id="espresso" name="item" value="Espresso" data-price="25">
                                 <label for="espresso">Espresso - R25</label>
                             </div>
                             <div class="menu-selection-item">
-                                <input type="checkbox" id="latte" name="item" value="Latte">
+                                <input type="checkbox" id="latte" name="item" value="Latte" data-price="35">
                                 <label for="latte">Latte - R35</label>
                             </div>
                             <div class="menu-selection-item">
-                                <input type="checkbox" id="cappuccino" name="item" value="Cappuccino">
+                                <input type="checkbox" id="cappuccino" name="item" value="Cappuccino" data-price="32">
                                 <label for="cappuccino">Cappuccino - R32</label>
                             </div>
                             <div class="menu-selection-item">
-                                <input type="checkbox" id="croissant" name="item" value="Croissant">
+                                <input type="checkbox" id="croissant" name="item" value="Croissant" data-price="28">
                                 <label for="croissant">Butter Croissant - R28</label>
                             </div>
                             <div class="menu-selection-item">
-                                <input type="checkbox" id="cinnamon" name="item" value="Cinnamon">
+                                <input type="checkbox" id="cinnamon" name="item" value="Cinnamon" data-price="38">
                                 <label for="cinnamon">Cinnamon Roll - R38</label>
                             </div>
                             <div class="menu-selection-item">
-                                <input type="checkbox" id="cookie" name="item" value="Cookie">
+                                <input type="checkbox" id="cookie" name="item" value="Cookie" data-price="22">
                                 <label for="cookie">Chocolate Chip Cookie - R22</label>
                             </div>
                             <div class="menu-selection-item">
-                                <input type="checkbox" id="chicken" name="item" value="Chicken">
+                                <input type="checkbox" id="chicken" name="item" value="Chicken" data-price="55">
                                 <label for="chicken">Chicken Mayo - R55</label>
                             </div>
                             <div class="menu-selection-item">
-                                <input type="checkbox" id="caprese" name="item" value="Caprese">
+                                <input type="checkbox" id="caprese" name="item" value="Caprese" data-price="60">
                                 <label for="caprese">Caprese - R60</label>
                             </div>
                             <div class="menu-selection-item">
-                                <input type="checkbox" id="cheese" name="item" value="Cheese">
+                                <input type="checkbox" id="cheese" name="item" value="Cheese" data-price="40">
                                 <label for="cheese">Toasted Cheese - R40</label>
                             </div>
                         </fieldset>
@@ -87,7 +100,8 @@
                             <div class="form-group">
                                 <label for="pickup-time">Select a Time</label>
                                 <input type="time" id="pickup-time" name="pickup-time" min="07:30" max="17:30" required>
-                                <small>Please select a time between 7:30 AM and 5:30 PM.</small>
+                                <small>Please select a time between 7:30 AM and 5:30 PM (Mon-Fri) or 8:30 AM and 3:30 PM (Sat).</small>
+                                <div class="error-message" id="order-time-error"></div>
                             </div>
                         </fieldset>
                         
@@ -97,9 +111,11 @@
                 
                 <aside class="order-summary">
                     <h3>Your Order Summary</h3>
-                    <p>Your items will appear here once selected.</p>
+                    <div id="summary-items">
+                        <p>Your items will appear here once selected.</p>
+                    </div>
                     <hr>
-                    <h4>Total: R0.00</h4>
+                    <h4 id="summary-total">Total: R0.00</h4>
                 </aside>
             </div>
         </section>
@@ -109,5 +125,6 @@
         <p>&copy; 2025 Twilight Grounds & Co. | All Rights Reserved</p>
     </footer>
 
+    <script src="js/script.js" defer></script>
 </body>
 </html>
